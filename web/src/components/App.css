@@ -1,0 +1,84 @@
+@keyframes shake {
+  0% { transform: translateX(0) }
+  25% { transform: translateX(2px) }
+  50% { transform: translateX(-2px) }
+  75% { transform: translateX(2px) }
+  100% { transform: translateX(0) }
+ }
+
+.nui-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.laptop {
+  background: #357EC7;
+  background-image: url("https://w.wallhaven.cc/full/j3/wallhaven-j3qpzq.png");
+  background-size: cover;
+  width: 75vw;
+  height: 50vw;
+  display: flex;
+  flex-direction: column;
+  border: solid 4px;
+}
+
+.laptop-screen {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  height: 47vw;
+  gap: 1em;
+}
+
+.laptop-taskbar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  background-color: #2b2d42;
+  height: 2.5vw;
+  gap: 1em;
+  box-shadow: 0px -3px 4px #00000044;
+}
+
+.taskbar-icon {
+  display: flex;
+  align-self: center;
+  padding: 4px 6px 5px 6px;
+  height: 48px;
+  width: 48px;
+}
+
+.taskbar-icon:hover {
+  background-color: #8d99ae;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+.taskbar-icon:active {
+  animation: shake 0.15s;
+}
+
+.screen-icon {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.375rem;
+  width: 64px;
+  padding: 4px;
+  color: #ccc;
+  font-size: 14px;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+}
+
+.screen-icon:hover {
+  background-color: #8d99ae55;
+  cursor: pointer;
+}
+
+.screen-icon:active {
+  background-color: #8d99ae99;
+  transform: translateY(1px);
+}
